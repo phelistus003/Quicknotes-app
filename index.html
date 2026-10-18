@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> QUICK NOTES</title>
+    </head>
+
+<body>
+    <header>
+        <h1>QuickNotes</h1>
+        <p>Document your ideas befor they dissappear write down!</p>
+    </header>
+    <main>
+        <section>
+            <h3>Add a note</h3>
+            <form action="">
+                <label for="note">NOTE</label>
+                <input type="text" id="note" name="note"><br><br>
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option value="Personal">Persona</option>
+                    <option value="Work">Work</option>
+                    <option value="Study">Study</option>
+                </select><br><br>
+                <button type="submit">Add Note</button>
+            </form>
+            <p></p>
+        </section>
+        <section>
+            <h3>Your note</h3>
+            <label for="search">Search notes</label>
+            <input type="text" id="search" name="search">
+            <p id="count"></p>
+            <ul id="notes-list"></ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>QuickNotes</p>
+    </footer>
+</body>
+</html>

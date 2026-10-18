@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> QUICK NOTES</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
 
 <body>
@@ -15,7 +16,7 @@
     <main>
         <section>
             <h3>Add a note</h3>
-            <form action="">
+            <form id=""note-form"">
                 <label for="note">NOTE</label>
                 <input type="text" id="note" name="note"><br><br>
                 <label for="category">Category</label>
@@ -26,13 +27,13 @@
                 </select><br><br>
                 <button type="submit">Add Note</button>
             </form>
-            <p></p>
+            <p id="error-message" class="error"></p>
         </section>
         <section>
             <h3>Your note</h3>
             <label for="search">Search notes</label>
             <input type="text" id="search" name="search">
-            <p id="count"></p>
+            <p id="note-count"></p>
             <ul id="notes-list"></ul>
         </section>
 
